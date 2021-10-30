@@ -13,7 +13,7 @@ from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
 
-from store.models import Category, Product, Cart, State
+from store.models import Category, Product, Cart, State, City
 
 from .serializers import (
     ExampleSerializer,
@@ -22,7 +22,8 @@ from .serializers import (
     ProductDetailSerializer,
     RegisterSerializer,
     CartSerializer,
-    StateListSerializer
+    StateListSerializer,
+    CityListSerializer
 )
 
 from .filters import ProductListFilter
@@ -117,3 +118,15 @@ class StateListView(ListAPIView):
         SearchFilter,
     )
 
+
+class CityListView(ListAPIView):
+    serializer_class = CityListSerializer
+    queryset = City.objects.all()
+    permission_classes = (IsAuthenticated,)
+    search_fields = ['name']
+    filterset_fields = ['state']
+
+    filter_backends = (
+        SearchFilter,
+        DjangoFilterBackend
+    )

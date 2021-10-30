@@ -4,7 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from django.utils.translation import gettext
 
-from store.models import Category, Product, Cart, State
+from store.models import Category, Product, Cart, State, City
 from store.helpers import rupiah_formatting
 
 
@@ -155,4 +155,10 @@ class CartSerializer(serializers.ModelSerializer):
 class StateListSerializer(serializers.ModelSerializer):
     class Meta:
         model = State
+        fields = ('id', 'name',)
+
+
+class CityListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = City
         fields = ('id', 'name',)
