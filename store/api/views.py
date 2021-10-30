@@ -4,7 +4,8 @@ from rest_framework.generics import (
     RetrieveAPIView,
     CreateAPIView,
     ListCreateAPIView,
-    UpdateAPIView
+    UpdateAPIView,
+    RetrieveUpdateDestroyAPIView
 )
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.authentication import BasicAuthentication
@@ -99,7 +100,7 @@ class CartListCreateView(ListCreateAPIView):
         return Response(response)
 
 
-class CartUpdateDestroyView(UpdateAPIView):
+class CartUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     serializer_class = CartSerializer
     queryset = Cart.objects.all()
     permission_classes = (IsAuthenticated,)
