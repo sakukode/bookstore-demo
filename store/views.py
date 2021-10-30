@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def hello_view(request):
+    html = '<html><body><p>Belajar Django itu menyenangkan.</p></body></html>'
+    return HttpResponse(html)
