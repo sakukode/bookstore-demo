@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-30 14:43+0700\n"
+"POT-Creation-Date: 2021-10-30 17:33+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: store/models.py:6 store/models.py:23 store/models.py:35 store/models.py:51
+#: store/models.py:73
 msgid "name"
 msgstr "nama"
 
@@ -26,7 +27,7 @@ msgstr "nama"
 msgid "category"
 msgstr "kategori"
 
-#: store/models.py:14
+#: store/models.py:14 store/models.py:83
 msgid "categories"
 msgstr "kategori"
 
@@ -65,3 +66,35 @@ msgstr "provinsi"
 #: store/models.py:60
 msgid "city"
 msgstr "kota"
+
+#: store/models.py:70
+msgid "product"
+msgstr "produk"
+
+#: store/models.py:71
+msgid "products"
+msgstr "produk"
+
+#: store/models.py:74
+msgid "slug"
+msgstr "slug"
+
+#: store/models.py:75
+msgid "description"
+msgstr "deskripsi"
+
+#: store/models.py:76
+msgid "stock"
+msgstr "stok"
+
+#: store/models.py:77
+msgid "weight"
+msgstr "berat"
+
+#: store/models.py:78
+msgid "price"
+msgstr "harga"
+
+#: store/models.py:79
+msgid "image"
+msgstr "gambar"

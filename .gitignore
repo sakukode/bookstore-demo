@@ -133,3 +133,6 @@ dmypy.json
 
 # django environment file
 .django_env
+
+# ignore image folder
+images

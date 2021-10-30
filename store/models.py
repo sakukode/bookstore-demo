@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext
-
+from django.utils.text import slugify
 
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name=gettext('name'))
@@ -61,3 +61,31 @@ class Shop(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Product(models.Model):
+    class Meta:
+        db_table = 'products'
+        ordering = ['created_at']
+        verbose_name = gettext('product')
+        verbose_name_plural = gettext('products')
+
+    name = models.CharField(max_length=100, verbose_name=gettext('name'))
+    slug = models.SlugField(null=True, blank=True, verbose_name=gettext('slug'))
+    description = models.TextField(verbose_name=gettext('description'))
+    stock = models.IntegerField(verbose_name=gettext('stock'))
+    weight = models.FloatField(verbose_name=gettext('weight'))
+    price = models.FloatField(verbose_name=gettext('price'))
+    image = models.ImageField(upload_to='images', verbose_name=gettext('image'))
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    # relationship fields
+    categories = models.ManyToManyField(Category, verbose_name=gettext('categories'))
+
+    def __str__(self):
+        return self.name
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+
+        super(Product, self).save(*args, **kwargs)
