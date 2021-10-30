@@ -1,5 +1,11 @@
 from django.contrib.auth.models import User
-from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView, ListCreateAPIView
+from rest_framework.generics import (
+    ListAPIView,
+    RetrieveAPIView,
+    CreateAPIView,
+    ListCreateAPIView,
+    UpdateAPIView
+)
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
@@ -91,3 +97,9 @@ class CartListCreateView(ListCreateAPIView):
                     "results": serializer.data}
 
         return Response(response)
+
+
+class CartUpdateDestroyView(UpdateAPIView):
+    serializer_class = CartSerializer
+    queryset = Cart.objects.all()
+    permission_classes = (IsAuthenticated,)

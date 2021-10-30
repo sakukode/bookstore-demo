@@ -97,12 +97,12 @@ class CartProductSerializer(serializers.ModelSerializer):
 
 class CartSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(write_only=True, default=serializers.CurrentUserDefault())
-    product_id = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True, write_only=True)
     product = CartProductSerializer(read_only=True)
+    product_id = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True, write_only=True)
 
     class Meta:
         model = Cart
-        fields = ('id', 'quantity', 'user', 'product_id', 'product')
+        fields = ('id', 'product', 'quantity', 'user', 'product_id')
         depth = 1
 
     def create(self, validated_data):
@@ -119,3 +119,34 @@ class CartSerializer(serializers.ModelSerializer):
             )
 
         return cart
+
+    def validate(self, attrs):
+        request = self.context.get('request', None)
+        action = getattr(request, 'method', None)
+
+        if action == 'PUT':
+            product = self.instance.product
+        else:
+            product = attrs['product_id']
+
+        if product.stock <= 0:
+            raise serializers.ValidationError(gettext("Product out of stock."))
+
+        if product.stock < attrs['quantity']:
+            raise serializers.ValidationError(gettext("Product doesn't have enough stock."))
+
+        return attrs
+
+    def update(self, instance, validated_data):
+        if 'product_id' in validated_data:
+            validated_data.pop('product_id', None)
+
+        return super(CartSerializer, self).update(instance, validated_data)
+
+    def get_fields(self, *args, **kwargs):
+        fields = super(CartSerializer, self).get_fields(*args, **kwargs)
+        request = self.context.get('request', None)
+        if request and getattr(request, 'method', None) == "PUT":
+            fields['product_id'].required = False
+
+        return fields
