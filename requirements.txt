@@ -3,3 +3,4 @@ mysqlclient == 2.0.3
 Pillow == 8.2.
 djangorestframework == 3.12.4
 django-filter == 2.4.0
+djangorestframework-simplejwt  == 4.7.2

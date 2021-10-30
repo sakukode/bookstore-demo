@@ -1,4 +1,5 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from django.contrib.auth.models import User
+from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
@@ -6,7 +7,13 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 from store.models import Category, Product
 
-from .serializers import ExampleSerializer, CategoryListSerializer, ProductListSerializer, ProductDetailSerializer
+from .serializers import (
+    ExampleSerializer,
+    CategoryListSerializer,
+    ProductListSerializer,
+    ProductDetailSerializer,
+    RegisterSerializer
+)
 
 from .filters import ProductListFilter
 
@@ -55,3 +62,8 @@ class ProductListView(ListAPIView):
 class ProductDetailView(RetrieveAPIView):
     serializer_class = ProductDetailSerializer
     queryset = Product.objects.all()
+
+
+class RegisterView(CreateAPIView):
+    serializer_class = RegisterSerializer
+    queryset = User.objects.all()
