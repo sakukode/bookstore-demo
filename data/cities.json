@@ -1,0 +1,4010 @@
+[
+  {
+    "model": "store.city",
+    "pk": 1,
+    "fields": {
+      "name": "Kabupaten Aceh Barat",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 2,
+    "fields": {
+      "name": "Kabupaten Aceh Barat Daya",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 3,
+    "fields": {
+      "name": "Kabupaten Aceh Besar",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 4,
+    "fields": {
+      "name": "Kabupaten Aceh Jaya",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 5,
+    "fields": {
+      "name": "Kabupaten Aceh Selatan",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 6,
+    "fields": {
+      "name": "Kabupaten Aceh Singkil",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 7,
+    "fields": {
+      "name": "Kabupaten Aceh Tamiang",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 8,
+    "fields": {
+      "name": "Kabupaten Aceh Tengah",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 9,
+    "fields": {
+      "name": "Kabupaten Aceh Tenggara",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 10,
+    "fields": {
+      "name": "Kabupaten Aceh Timur",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 11,
+    "fields": {
+      "name": "Kabupaten Aceh Utara",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 12,
+    "fields": {
+      "name": "Kabupaten Agam",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 13,
+    "fields": {
+      "name": "Kabupaten Alor",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 14,
+    "fields": {
+      "name": "Kota Ambon",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 15,
+    "fields": {
+      "name": "Kabupaten Asahan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 16,
+    "fields": {
+      "name": "Kabupaten Asmat",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 17,
+    "fields": {
+      "name": "Kabupaten Badung",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 18,
+    "fields": {
+      "name": "Kabupaten Balangan",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 19,
+    "fields": {
+      "name": "Kota Balikpapan",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 20,
+    "fields": {
+      "name": "Kota Banda Aceh",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 21,
+    "fields": {
+      "name": "Kota Bandar Lampung",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 22,
+    "fields": {
+      "name": "Kabupaten Bandung",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 23,
+    "fields": {
+      "name": "Kota Bandung",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 24,
+    "fields": {
+      "name": "Kabupaten Bandung Barat",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 25,
+    "fields": {
+      "name": "Kabupaten Banggai",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 26,
+    "fields": {
+      "name": "Kabupaten Banggai Kepulauan",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 27,
+    "fields": {
+      "name": "Kabupaten Bangka",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 28,
+    "fields": {
+      "name": "Kabupaten Bangka Barat",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 29,
+    "fields": {
+      "name": "Kabupaten Bangka Selatan",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 30,
+    "fields": {
+      "name": "Kabupaten Bangka Tengah",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 31,
+    "fields": {
+      "name": "Kabupaten Bangkalan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 32,
+    "fields": {
+      "name": "Kabupaten Bangli",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 33,
+    "fields": {
+      "name": "Kabupaten Banjar",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 34,
+    "fields": {
+      "name": "Kota Banjar",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 35,
+    "fields": {
+      "name": "Kota Banjarbaru",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 36,
+    "fields": {
+      "name": "Kota Banjarmasin",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 37,
+    "fields": {
+      "name": "Kabupaten Banjarnegara",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 38,
+    "fields": {
+      "name": "Kabupaten Bantaeng",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 39,
+    "fields": {
+      "name": "Kabupaten Bantul",
+      "state": 5
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 40,
+    "fields": {
+      "name": "Kabupaten Banyuasin",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 41,
+    "fields": {
+      "name": "Kabupaten Banyumas",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 42,
+    "fields": {
+      "name": "Kabupaten Banyuwangi",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 43,
+    "fields": {
+      "name": "Kabupaten Barito Kuala",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 44,
+    "fields": {
+      "name": "Kabupaten Barito Selatan",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 45,
+    "fields": {
+      "name": "Kabupaten Barito Timur",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 46,
+    "fields": {
+      "name": "Kabupaten Barito Utara",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 47,
+    "fields": {
+      "name": "Kabupaten Barru",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 48,
+    "fields": {
+      "name": "Kota Batam",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 49,
+    "fields": {
+      "name": "Kabupaten Batang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 50,
+    "fields": {
+      "name": "Kabupaten Batang Hari",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 51,
+    "fields": {
+      "name": "Kota Batu",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 52,
+    "fields": {
+      "name": "Kabupaten Batu Bara",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 53,
+    "fields": {
+      "name": "Kota Bau-Bau",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 54,
+    "fields": {
+      "name": "Kabupaten Bekasi",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 55,
+    "fields": {
+      "name": "Kota Bekasi",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 56,
+    "fields": {
+      "name": "Kabupaten Belitung",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 57,
+    "fields": {
+      "name": "Kabupaten Belitung Timur",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 58,
+    "fields": {
+      "name": "Kabupaten Belu",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 59,
+    "fields": {
+      "name": "Kabupaten Bener Meriah",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 60,
+    "fields": {
+      "name": "Kabupaten Bengkalis",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 61,
+    "fields": {
+      "name": "Kabupaten Bengkayang",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 62,
+    "fields": {
+      "name": "Kota Bengkulu",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 63,
+    "fields": {
+      "name": "Kabupaten Bengkulu Selatan",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 64,
+    "fields": {
+      "name": "Kabupaten Bengkulu Tengah",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 65,
+    "fields": {
+      "name": "Kabupaten Bengkulu Utara",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 66,
+    "fields": {
+      "name": "Kabupaten Berau",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 67,
+    "fields": {
+      "name": "Kabupaten Biak Numfor",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 68,
+    "fields": {
+      "name": "Kabupaten Bima",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 69,
+    "fields": {
+      "name": "Kota Bima",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 70,
+    "fields": {
+      "name": "Kota Binjai",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 71,
+    "fields": {
+      "name": "Kabupaten Bintan",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 72,
+    "fields": {
+      "name": "Kabupaten Bireuen",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 73,
+    "fields": {
+      "name": "Kota Bitung",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 74,
+    "fields": {
+      "name": "Kabupaten Blitar",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 75,
+    "fields": {
+      "name": "Kota Blitar",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 76,
+    "fields": {
+      "name": "Kabupaten Blora",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 77,
+    "fields": {
+      "name": "Kabupaten Boalemo",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 78,
+    "fields": {
+      "name": "Kabupaten Bogor",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 79,
+    "fields": {
+      "name": "Kota Bogor",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 80,
+    "fields": {
+      "name": "Kabupaten Bojonegoro",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 81,
+    "fields": {
+      "name": "Kabupaten Bolaang Mongondow (Bolmong)",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 82,
+    "fields": {
+      "name": "Kabupaten Bolaang Mongondow Selatan",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 83,
+    "fields": {
+      "name": "Kabupaten Bolaang Mongondow Timur",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 84,
+    "fields": {
+      "name": "Kabupaten Bolaang Mongondow Utara",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 85,
+    "fields": {
+      "name": "Kabupaten Bombana",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 86,
+    "fields": {
+      "name": "Kabupaten Bondowoso",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 87,
+    "fields": {
+      "name": "Kabupaten Bone",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 88,
+    "fields": {
+      "name": "Kabupaten Bone Bolango",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 89,
+    "fields": {
+      "name": "Kota Bontang",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 90,
+    "fields": {
+      "name": "Kabupaten Boven Digoel",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 91,
+    "fields": {
+      "name": "Kabupaten Boyolali",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 92,
+    "fields": {
+      "name": "Kabupaten Brebes",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 93,
+    "fields": {
+      "name": "Kota Bukittinggi",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 94,
+    "fields": {
+      "name": "Kabupaten Buleleng",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 95,
+    "fields": {
+      "name": "Kabupaten Bulukumba",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 96,
+    "fields": {
+      "name": "Kabupaten Bulungan (Bulongan)",
+      "state": 16
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 97,
+    "fields": {
+      "name": "Kabupaten Bungo",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 98,
+    "fields": {
+      "name": "Kabupaten Buol",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 99,
+    "fields": {
+      "name": "Kabupaten Buru",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 100,
+    "fields": {
+      "name": "Kabupaten Buru Selatan",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 101,
+    "fields": {
+      "name": "Kabupaten Buton",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 102,
+    "fields": {
+      "name": "Kabupaten Buton Utara",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 103,
+    "fields": {
+      "name": "Kabupaten Ciamis",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 104,
+    "fields": {
+      "name": "Kabupaten Cianjur",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 105,
+    "fields": {
+      "name": "Kabupaten Cilacap",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 106,
+    "fields": {
+      "name": "Kota Cilegon",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 107,
+    "fields": {
+      "name": "Kota Cimahi",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 108,
+    "fields": {
+      "name": "Kabupaten Cirebon",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 109,
+    "fields": {
+      "name": "Kota Cirebon",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 110,
+    "fields": {
+      "name": "Kabupaten Dairi",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 111,
+    "fields": {
+      "name": "Kabupaten Deiyai (Deliyai)",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 112,
+    "fields": {
+      "name": "Kabupaten Deli Serdang",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 113,
+    "fields": {
+      "name": "Kabupaten Demak",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 114,
+    "fields": {
+      "name": "Kota Denpasar",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 115,
+    "fields": {
+      "name": "Kota Depok",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 116,
+    "fields": {
+      "name": "Kabupaten Dharmasraya",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 117,
+    "fields": {
+      "name": "Kabupaten Dogiyai",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 118,
+    "fields": {
+      "name": "Kabupaten Dompu",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 119,
+    "fields": {
+      "name": "Kabupaten Donggala",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 120,
+    "fields": {
+      "name": "Kota Dumai",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 121,
+    "fields": {
+      "name": "Kabupaten Empat Lawang",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 122,
+    "fields": {
+      "name": "Kabupaten Ende",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 123,
+    "fields": {
+      "name": "Kabupaten Enrekang",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 124,
+    "fields": {
+      "name": "Kabupaten Fakfak",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 125,
+    "fields": {
+      "name": "Kabupaten Flores Timur",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 126,
+    "fields": {
+      "name": "Kabupaten Garut",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 127,
+    "fields": {
+      "name": "Kabupaten Gayo Lues",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 128,
+    "fields": {
+      "name": "Kabupaten Gianyar",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 129,
+    "fields": {
+      "name": "Kabupaten Gorontalo",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 130,
+    "fields": {
+      "name": "Kota Gorontalo",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 131,
+    "fields": {
+      "name": "Kabupaten Gorontalo Utara",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 132,
+    "fields": {
+      "name": "Kabupaten Gowa",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 133,
+    "fields": {
+      "name": "Kabupaten Gresik",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 134,
+    "fields": {
+      "name": "Kabupaten Grobogan",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 135,
+    "fields": {
+      "name": "Kabupaten Gunung Kidul",
+      "state": 5
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 136,
+    "fields": {
+      "name": "Kabupaten Gunung Mas",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 137,
+    "fields": {
+      "name": "Kota Gunungsitoli",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 138,
+    "fields": {
+      "name": "Kabupaten Halmahera Barat",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 139,
+    "fields": {
+      "name": "Kabupaten Halmahera Selatan",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 140,
+    "fields": {
+      "name": "Kabupaten Halmahera Tengah",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 141,
+    "fields": {
+      "name": "Kabupaten Halmahera Timur",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 142,
+    "fields": {
+      "name": "Kabupaten Halmahera Utara",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 143,
+    "fields": {
+      "name": "Kabupaten Hulu Sungai Selatan",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 144,
+    "fields": {
+      "name": "Kabupaten Hulu Sungai Tengah",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 145,
+    "fields": {
+      "name": "Kabupaten Hulu Sungai Utara",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 146,
+    "fields": {
+      "name": "Kabupaten Humbang Hasundutan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 147,
+    "fields": {
+      "name": "Kabupaten Indragiri Hilir",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 148,
+    "fields": {
+      "name": "Kabupaten Indragiri Hulu",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 149,
+    "fields": {
+      "name": "Kabupaten Indramayu",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 150,
+    "fields": {
+      "name": "Kabupaten Intan Jaya",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 151,
+    "fields": {
+      "name": "Kota Jakarta Barat",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 152,
+    "fields": {
+      "name": "Kota Jakarta Pusat",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 153,
+    "fields": {
+      "name": "Kota Jakarta Selatan",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 154,
+    "fields": {
+      "name": "Kota Jakarta Timur",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 155,
+    "fields": {
+      "name": "Kota Jakarta Utara",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 156,
+    "fields": {
+      "name": "Kota Jambi",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 157,
+    "fields": {
+      "name": "Kabupaten Jayapura",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 158,
+    "fields": {
+      "name": "Kota Jayapura",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 159,
+    "fields": {
+      "name": "Kabupaten Jayawijaya",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 160,
+    "fields": {
+      "name": "Kabupaten Jember",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 161,
+    "fields": {
+      "name": "Kabupaten Jembrana",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 162,
+    "fields": {
+      "name": "Kabupaten Jeneponto",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 163,
+    "fields": {
+      "name": "Kabupaten Jepara",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 164,
+    "fields": {
+      "name": "Kabupaten Jombang",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 165,
+    "fields": {
+      "name": "Kabupaten Kaimana",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 166,
+    "fields": {
+      "name": "Kabupaten Kampar",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 167,
+    "fields": {
+      "name": "Kabupaten Kapuas",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 168,
+    "fields": {
+      "name": "Kabupaten Kapuas Hulu",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 169,
+    "fields": {
+      "name": "Kabupaten Karanganyar",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 170,
+    "fields": {
+      "name": "Kabupaten Karangasem",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 171,
+    "fields": {
+      "name": "Kabupaten Karawang",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 172,
+    "fields": {
+      "name": "Kabupaten Karimun",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 173,
+    "fields": {
+      "name": "Kabupaten Karo",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 174,
+    "fields": {
+      "name": "Kabupaten Katingan",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 175,
+    "fields": {
+      "name": "Kabupaten Kaur",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 176,
+    "fields": {
+      "name": "Kabupaten Kayong Utara",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 177,
+    "fields": {
+      "name": "Kabupaten Kebumen",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 178,
+    "fields": {
+      "name": "Kabupaten Kediri",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 179,
+    "fields": {
+      "name": "Kota Kediri",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 180,
+    "fields": {
+      "name": "Kabupaten Keerom",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 181,
+    "fields": {
+      "name": "Kabupaten Kendal",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 182,
+    "fields": {
+      "name": "Kota Kendari",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 183,
+    "fields": {
+      "name": "Kabupaten Kepahiang",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 184,
+    "fields": {
+      "name": "Kabupaten Kepulauan Anambas",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 185,
+    "fields": {
+      "name": "Kabupaten Kepulauan Aru",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 186,
+    "fields": {
+      "name": "Kabupaten Kepulauan Mentawai",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 187,
+    "fields": {
+      "name": "Kabupaten Kepulauan Meranti",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 188,
+    "fields": {
+      "name": "Kabupaten Kepulauan Sangihe",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 189,
+    "fields": {
+      "name": "Kabupaten Kepulauan Seribu",
+      "state": 6
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 190,
+    "fields": {
+      "name": "Kabupaten Kepulauan Siau Tagulandang Biaro (Sitaro)",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 191,
+    "fields": {
+      "name": "Kabupaten Kepulauan Sula",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 192,
+    "fields": {
+      "name": "Kabupaten Kepulauan Talaud",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 193,
+    "fields": {
+      "name": "Kabupaten Kepulauan Yapen (Yapen Waropen)",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 194,
+    "fields": {
+      "name": "Kabupaten Kerinci",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 195,
+    "fields": {
+      "name": "Kabupaten Ketapang",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 196,
+    "fields": {
+      "name": "Kabupaten Klaten",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 197,
+    "fields": {
+      "name": "Kabupaten Klungkung",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 198,
+    "fields": {
+      "name": "Kabupaten Kolaka",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 199,
+    "fields": {
+      "name": "Kabupaten Kolaka Utara",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 200,
+    "fields": {
+      "name": "Kabupaten Konawe",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 201,
+    "fields": {
+      "name": "Kabupaten Konawe Selatan",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 202,
+    "fields": {
+      "name": "Kabupaten Konawe Utara",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 203,
+    "fields": {
+      "name": "Kabupaten Kotabaru",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 204,
+    "fields": {
+      "name": "Kota Kotamobagu",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 205,
+    "fields": {
+      "name": "Kabupaten Kotawaringin Barat",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 206,
+    "fields": {
+      "name": "Kabupaten Kotawaringin Timur",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 207,
+    "fields": {
+      "name": "Kabupaten Kuantan Singingi",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 208,
+    "fields": {
+      "name": "Kabupaten Kubu Raya",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 209,
+    "fields": {
+      "name": "Kabupaten Kudus",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 210,
+    "fields": {
+      "name": "Kabupaten Kulon Progo",
+      "state": 5
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 211,
+    "fields": {
+      "name": "Kabupaten Kuningan",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 212,
+    "fields": {
+      "name": "Kabupaten Kupang",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 213,
+    "fields": {
+      "name": "Kota Kupang",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 214,
+    "fields": {
+      "name": "Kabupaten Kutai Barat",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 215,
+    "fields": {
+      "name": "Kabupaten Kutai Kartanegara",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 216,
+    "fields": {
+      "name": "Kabupaten Kutai Timur",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 217,
+    "fields": {
+      "name": "Kabupaten Labuhan Batu",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 218,
+    "fields": {
+      "name": "Kabupaten Labuhan Batu Selatan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 219,
+    "fields": {
+      "name": "Kabupaten Labuhan Batu Utara",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 220,
+    "fields": {
+      "name": "Kabupaten Lahat",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 221,
+    "fields": {
+      "name": "Kabupaten Lamandau",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 222,
+    "fields": {
+      "name": "Kabupaten Lamongan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 223,
+    "fields": {
+      "name": "Kabupaten Lampung Barat",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 224,
+    "fields": {
+      "name": "Kabupaten Lampung Selatan",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 225,
+    "fields": {
+      "name": "Kabupaten Lampung Tengah",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 226,
+    "fields": {
+      "name": "Kabupaten Lampung Timur",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 227,
+    "fields": {
+      "name": "Kabupaten Lampung Utara",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 228,
+    "fields": {
+      "name": "Kabupaten Landak",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 229,
+    "fields": {
+      "name": "Kabupaten Langkat",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 230,
+    "fields": {
+      "name": "Kota Langsa",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 231,
+    "fields": {
+      "name": "Kabupaten Lanny Jaya",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 232,
+    "fields": {
+      "name": "Kabupaten Lebak",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 233,
+    "fields": {
+      "name": "Kabupaten Lebong",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 234,
+    "fields": {
+      "name": "Kabupaten Lembata",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 235,
+    "fields": {
+      "name": "Kota Lhokseumawe",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 236,
+    "fields": {
+      "name": "Kabupaten Lima Puluh Koto/Kota",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 237,
+    "fields": {
+      "name": "Kabupaten Lingga",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 238,
+    "fields": {
+      "name": "Kabupaten Lombok Barat",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 239,
+    "fields": {
+      "name": "Kabupaten Lombok Tengah",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 240,
+    "fields": {
+      "name": "Kabupaten Lombok Timur",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 241,
+    "fields": {
+      "name": "Kabupaten Lombok Utara",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 242,
+    "fields": {
+      "name": "Kota Lubuk Linggau",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 243,
+    "fields": {
+      "name": "Kabupaten Lumajang",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 244,
+    "fields": {
+      "name": "Kabupaten Luwu",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 245,
+    "fields": {
+      "name": "Kabupaten Luwu Timur",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 246,
+    "fields": {
+      "name": "Kabupaten Luwu Utara",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 247,
+    "fields": {
+      "name": "Kabupaten Madiun",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 248,
+    "fields": {
+      "name": "Kota Madiun",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 249,
+    "fields": {
+      "name": "Kabupaten Magelang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 250,
+    "fields": {
+      "name": "Kota Magelang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 251,
+    "fields": {
+      "name": "Kabupaten Magetan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 252,
+    "fields": {
+      "name": "Kabupaten Majalengka",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 253,
+    "fields": {
+      "name": "Kabupaten Majene",
+      "state": 27
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 254,
+    "fields": {
+      "name": "Kota Makassar",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 255,
+    "fields": {
+      "name": "Kabupaten Malang",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 256,
+    "fields": {
+      "name": "Kota Malang",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 257,
+    "fields": {
+      "name": "Kabupaten Malinau",
+      "state": 16
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 258,
+    "fields": {
+      "name": "Kabupaten Maluku Barat Daya",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 259,
+    "fields": {
+      "name": "Kabupaten Maluku Tengah",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 260,
+    "fields": {
+      "name": "Kabupaten Maluku Tenggara",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 261,
+    "fields": {
+      "name": "Kabupaten Maluku Tenggara Barat",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 262,
+    "fields": {
+      "name": "Kabupaten Mamasa",
+      "state": 27
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 263,
+    "fields": {
+      "name": "Kabupaten Mamberamo Raya",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 264,
+    "fields": {
+      "name": "Kabupaten Mamberamo Tengah",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 265,
+    "fields": {
+      "name": "Kabupaten Mamuju",
+      "state": 27
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 266,
+    "fields": {
+      "name": "Kabupaten Mamuju Utara",
+      "state": 27
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 267,
+    "fields": {
+      "name": "Kota Manado",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 268,
+    "fields": {
+      "name": "Kabupaten Mandailing Natal",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 269,
+    "fields": {
+      "name": "Kabupaten Manggarai",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 270,
+    "fields": {
+      "name": "Kabupaten Manggarai Barat",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 271,
+    "fields": {
+      "name": "Kabupaten Manggarai Timur",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 272,
+    "fields": {
+      "name": "Kabupaten Manokwari",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 273,
+    "fields": {
+      "name": "Kabupaten Manokwari Selatan",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 274,
+    "fields": {
+      "name": "Kabupaten Mappi",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 275,
+    "fields": {
+      "name": "Kabupaten Maros",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 276,
+    "fields": {
+      "name": "Kota Mataram",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 277,
+    "fields": {
+      "name": "Kabupaten Maybrat",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 278,
+    "fields": {
+      "name": "Kota Medan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 279,
+    "fields": {
+      "name": "Kabupaten Melawi",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 280,
+    "fields": {
+      "name": "Kabupaten Merangin",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 281,
+    "fields": {
+      "name": "Kabupaten Merauke",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 282,
+    "fields": {
+      "name": "Kabupaten Mesuji",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 283,
+    "fields": {
+      "name": "Kota Metro",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 284,
+    "fields": {
+      "name": "Kabupaten Mimika",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 285,
+    "fields": {
+      "name": "Kabupaten Minahasa",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 286,
+    "fields": {
+      "name": "Kabupaten Minahasa Selatan",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 287,
+    "fields": {
+      "name": "Kabupaten Minahasa Tenggara",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 288,
+    "fields": {
+      "name": "Kabupaten Minahasa Utara",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 289,
+    "fields": {
+      "name": "Kabupaten Mojokerto",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 290,
+    "fields": {
+      "name": "Kota Mojokerto",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 291,
+    "fields": {
+      "name": "Kabupaten Morowali",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 292,
+    "fields": {
+      "name": "Kabupaten Muara Enim",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 293,
+    "fields": {
+      "name": "Kabupaten Muaro Jambi",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 294,
+    "fields": {
+      "name": "Kabupaten Muko Muko",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 295,
+    "fields": {
+      "name": "Kabupaten Muna",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 296,
+    "fields": {
+      "name": "Kabupaten Murung Raya",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 297,
+    "fields": {
+      "name": "Kabupaten Musi Banyuasin",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 298,
+    "fields": {
+      "name": "Kabupaten Musi Rawas",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 299,
+    "fields": {
+      "name": "Kabupaten Nabire",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 300,
+    "fields": {
+      "name": "Kabupaten Nagan Raya",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 301,
+    "fields": {
+      "name": "Kabupaten Nagekeo",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 302,
+    "fields": {
+      "name": "Kabupaten Natuna",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 303,
+    "fields": {
+      "name": "Kabupaten Nduga",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 304,
+    "fields": {
+      "name": "Kabupaten Ngada",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 305,
+    "fields": {
+      "name": "Kabupaten Nganjuk",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 306,
+    "fields": {
+      "name": "Kabupaten Ngawi",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 307,
+    "fields": {
+      "name": "Kabupaten Nias",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 308,
+    "fields": {
+      "name": "Kabupaten Nias Barat",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 309,
+    "fields": {
+      "name": "Kabupaten Nias Selatan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 310,
+    "fields": {
+      "name": "Kabupaten Nias Utara",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 311,
+    "fields": {
+      "name": "Kabupaten Nunukan",
+      "state": 16
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 312,
+    "fields": {
+      "name": "Kabupaten Ogan Ilir",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 313,
+    "fields": {
+      "name": "Kabupaten Ogan Komering Ilir",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 314,
+    "fields": {
+      "name": "Kabupaten Ogan Komering Ulu",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 315,
+    "fields": {
+      "name": "Kabupaten Ogan Komering Ulu Selatan",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 316,
+    "fields": {
+      "name": "Kabupaten Ogan Komering Ulu Timur",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 317,
+    "fields": {
+      "name": "Kabupaten Pacitan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 318,
+    "fields": {
+      "name": "Kota Padang",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 319,
+    "fields": {
+      "name": "Kabupaten Padang Lawas",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 320,
+    "fields": {
+      "name": "Kabupaten Padang Lawas Utara",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 321,
+    "fields": {
+      "name": "Kota Padang Panjang",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 322,
+    "fields": {
+      "name": "Kabupaten Padang Pariaman",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 323,
+    "fields": {
+      "name": "Kota Padang Sidempuan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 324,
+    "fields": {
+      "name": "Kota Pagar Alam",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 325,
+    "fields": {
+      "name": "Kabupaten Pakpak Bharat",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 326,
+    "fields": {
+      "name": "Kota Palangka Raya",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 327,
+    "fields": {
+      "name": "Kota Palembang",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 328,
+    "fields": {
+      "name": "Kota Palopo",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 329,
+    "fields": {
+      "name": "Kota Palu",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 330,
+    "fields": {
+      "name": "Kabupaten Pamekasan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 331,
+    "fields": {
+      "name": "Kabupaten Pandeglang",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 332,
+    "fields": {
+      "name": "Kabupaten Pangandaran",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 333,
+    "fields": {
+      "name": "Kabupaten Pangkajene Kepulauan",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 334,
+    "fields": {
+      "name": "Kota Pangkal Pinang",
+      "state": 2
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 335,
+    "fields": {
+      "name": "Kabupaten Paniai",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 336,
+    "fields": {
+      "name": "Kota Parepare",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 337,
+    "fields": {
+      "name": "Kota Pariaman",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 338,
+    "fields": {
+      "name": "Kabupaten Parigi Moutong",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 339,
+    "fields": {
+      "name": "Kabupaten Pasaman",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 340,
+    "fields": {
+      "name": "Kabupaten Pasaman Barat",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 341,
+    "fields": {
+      "name": "Kabupaten Paser",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 342,
+    "fields": {
+      "name": "Kabupaten Pasuruan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 343,
+    "fields": {
+      "name": "Kota Pasuruan",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 344,
+    "fields": {
+      "name": "Kabupaten Pati",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 345,
+    "fields": {
+      "name": "Kota Payakumbuh",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 346,
+    "fields": {
+      "name": "Kabupaten Pegunungan Arfak",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 347,
+    "fields": {
+      "name": "Kabupaten Pegunungan Bintang",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 348,
+    "fields": {
+      "name": "Kabupaten Pekalongan",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 349,
+    "fields": {
+      "name": "Kota Pekalongan",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 350,
+    "fields": {
+      "name": "Kota Pekanbaru",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 351,
+    "fields": {
+      "name": "Kabupaten Pelalawan",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 352,
+    "fields": {
+      "name": "Kabupaten Pemalang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 353,
+    "fields": {
+      "name": "Kota Pematang Siantar",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 354,
+    "fields": {
+      "name": "Kabupaten Penajam Paser Utara",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 355,
+    "fields": {
+      "name": "Kabupaten Pesawaran",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 356,
+    "fields": {
+      "name": "Kabupaten Pesisir Barat",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 357,
+    "fields": {
+      "name": "Kabupaten Pesisir Selatan",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 358,
+    "fields": {
+      "name": "Kabupaten Pidie",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 359,
+    "fields": {
+      "name": "Kabupaten Pidie Jaya",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 360,
+    "fields": {
+      "name": "Kabupaten Pinrang",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 361,
+    "fields": {
+      "name": "Kabupaten Pohuwato",
+      "state": 7
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 362,
+    "fields": {
+      "name": "Kabupaten Polewali Mandar",
+      "state": 27
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 363,
+    "fields": {
+      "name": "Kabupaten Ponorogo",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 364,
+    "fields": {
+      "name": "Kabupaten Pontianak",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 365,
+    "fields": {
+      "name": "Kota Pontianak",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 366,
+    "fields": {
+      "name": "Kabupaten Poso",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 367,
+    "fields": {
+      "name": "Kota Prabumulih",
+      "state": 33
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 368,
+    "fields": {
+      "name": "Kabupaten Pringsewu",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 369,
+    "fields": {
+      "name": "Kabupaten Probolinggo",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 370,
+    "fields": {
+      "name": "Kota Probolinggo",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 371,
+    "fields": {
+      "name": "Kabupaten Pulang Pisau",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 372,
+    "fields": {
+      "name": "Kabupaten Pulau Morotai",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 373,
+    "fields": {
+      "name": "Kabupaten Puncak",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 374,
+    "fields": {
+      "name": "Kabupaten Puncak Jaya",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 375,
+    "fields": {
+      "name": "Kabupaten Purbalingga",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 376,
+    "fields": {
+      "name": "Kabupaten Purwakarta",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 377,
+    "fields": {
+      "name": "Kabupaten Purworejo",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 378,
+    "fields": {
+      "name": "Kabupaten Raja Ampat",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 379,
+    "fields": {
+      "name": "Kabupaten Rejang Lebong",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 380,
+    "fields": {
+      "name": "Kabupaten Rembang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 381,
+    "fields": {
+      "name": "Kabupaten Rokan Hilir",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 382,
+    "fields": {
+      "name": "Kabupaten Rokan Hulu",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 383,
+    "fields": {
+      "name": "Kabupaten Rote Ndao",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 384,
+    "fields": {
+      "name": "Kota Sabang",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 385,
+    "fields": {
+      "name": "Kabupaten Sabu Raijua",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 386,
+    "fields": {
+      "name": "Kota Salatiga",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 387,
+    "fields": {
+      "name": "Kota Samarinda",
+      "state": 15
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 388,
+    "fields": {
+      "name": "Kabupaten Sambas",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 389,
+    "fields": {
+      "name": "Kabupaten Samosir",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 390,
+    "fields": {
+      "name": "Kabupaten Sampang",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 391,
+    "fields": {
+      "name": "Kabupaten Sanggau",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 392,
+    "fields": {
+      "name": "Kabupaten Sarmi",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 393,
+    "fields": {
+      "name": "Kabupaten Sarolangun",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 394,
+    "fields": {
+      "name": "Kota Sawah Lunto",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 395,
+    "fields": {
+      "name": "Kabupaten Sekadau",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 396,
+    "fields": {
+      "name": "Kabupaten Selayar (Kepulauan Selayar)",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 397,
+    "fields": {
+      "name": "Kabupaten Seluma",
+      "state": 4
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 398,
+    "fields": {
+      "name": "Kabupaten Semarang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 399,
+    "fields": {
+      "name": "Kota Semarang",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 400,
+    "fields": {
+      "name": "Kabupaten Seram Bagian Barat",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 401,
+    "fields": {
+      "name": "Kabupaten Seram Bagian Timur",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 402,
+    "fields": {
+      "name": "Kabupaten Serang",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 403,
+    "fields": {
+      "name": "Kota Serang",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 404,
+    "fields": {
+      "name": "Kabupaten Serdang Bedagai",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 405,
+    "fields": {
+      "name": "Kabupaten Seruyan",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 406,
+    "fields": {
+      "name": "Kabupaten Siak",
+      "state": 26
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 407,
+    "fields": {
+      "name": "Kota Sibolga",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 408,
+    "fields": {
+      "name": "Kabupaten Sidenreng Rappang/Rapang",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 409,
+    "fields": {
+      "name": "Kabupaten Sidoarjo",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 410,
+    "fields": {
+      "name": "Kabupaten Sigi",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 411,
+    "fields": {
+      "name": "Kabupaten Sijunjung (Sawah Lunto Sijunjung)",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 412,
+    "fields": {
+      "name": "Kabupaten Sikka",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 413,
+    "fields": {
+      "name": "Kabupaten Simalungun",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 414,
+    "fields": {
+      "name": "Kabupaten Simeulue",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 415,
+    "fields": {
+      "name": "Kota Singkawang",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 416,
+    "fields": {
+      "name": "Kabupaten Sinjai",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 417,
+    "fields": {
+      "name": "Kabupaten Sintang",
+      "state": 12
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 418,
+    "fields": {
+      "name": "Kabupaten Situbondo",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 419,
+    "fields": {
+      "name": "Kabupaten Sleman",
+      "state": 5
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 420,
+    "fields": {
+      "name": "Kabupaten Solok",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 421,
+    "fields": {
+      "name": "Kota Solok",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 422,
+    "fields": {
+      "name": "Kabupaten Solok Selatan",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 423,
+    "fields": {
+      "name": "Kabupaten Soppeng",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 424,
+    "fields": {
+      "name": "Kabupaten Sorong",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 425,
+    "fields": {
+      "name": "Kota Sorong",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 426,
+    "fields": {
+      "name": "Kabupaten Sorong Selatan",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 427,
+    "fields": {
+      "name": "Kabupaten Sragen",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 428,
+    "fields": {
+      "name": "Kabupaten Subang",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 429,
+    "fields": {
+      "name": "Kota Subulussalam",
+      "state": 21
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 430,
+    "fields": {
+      "name": "Kabupaten Sukabumi",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 431,
+    "fields": {
+      "name": "Kota Sukabumi",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 432,
+    "fields": {
+      "name": "Kabupaten Sukamara",
+      "state": 14
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 433,
+    "fields": {
+      "name": "Kabupaten Sukoharjo",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 434,
+    "fields": {
+      "name": "Kabupaten Sumba Barat",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 435,
+    "fields": {
+      "name": "Kabupaten Sumba Barat Daya",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 436,
+    "fields": {
+      "name": "Kabupaten Sumba Tengah",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 437,
+    "fields": {
+      "name": "Kabupaten Sumba Timur",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 438,
+    "fields": {
+      "name": "Kabupaten Sumbawa",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 439,
+    "fields": {
+      "name": "Kabupaten Sumbawa Barat",
+      "state": 22
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 440,
+    "fields": {
+      "name": "Kabupaten Sumedang",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 441,
+    "fields": {
+      "name": "Kabupaten Sumenep",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 442,
+    "fields": {
+      "name": "Kota Sungaipenuh",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 443,
+    "fields": {
+      "name": "Kabupaten Supiori",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 444,
+    "fields": {
+      "name": "Kota Surabaya",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 445,
+    "fields": {
+      "name": "Kota Surakarta (Solo)",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 446,
+    "fields": {
+      "name": "Kabupaten Tabalong",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 447,
+    "fields": {
+      "name": "Kabupaten Tabanan",
+      "state": 1
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 448,
+    "fields": {
+      "name": "Kabupaten Takalar",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 449,
+    "fields": {
+      "name": "Kabupaten Tambrauw",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 450,
+    "fields": {
+      "name": "Kabupaten Tana Tidung",
+      "state": 16
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 451,
+    "fields": {
+      "name": "Kabupaten Tana Toraja",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 452,
+    "fields": {
+      "name": "Kabupaten Tanah Bumbu",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 453,
+    "fields": {
+      "name": "Kabupaten Tanah Datar",
+      "state": 32
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 454,
+    "fields": {
+      "name": "Kabupaten Tanah Laut",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 455,
+    "fields": {
+      "name": "Kabupaten Tangerang",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 456,
+    "fields": {
+      "name": "Kota Tangerang",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 457,
+    "fields": {
+      "name": "Kota Tangerang Selatan",
+      "state": 3
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 458,
+    "fields": {
+      "name": "Kabupaten Tanggamus",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 459,
+    "fields": {
+      "name": "Kota Tanjung Balai",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 460,
+    "fields": {
+      "name": "Kabupaten Tanjung Jabung Barat",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 461,
+    "fields": {
+      "name": "Kabupaten Tanjung Jabung Timur",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 462,
+    "fields": {
+      "name": "Kota Tanjung Pinang",
+      "state": 17
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 463,
+    "fields": {
+      "name": "Kabupaten Tapanuli Selatan",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 464,
+    "fields": {
+      "name": "Kabupaten Tapanuli Tengah",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 465,
+    "fields": {
+      "name": "Kabupaten Tapanuli Utara",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 466,
+    "fields": {
+      "name": "Kabupaten Tapin",
+      "state": 13
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 467,
+    "fields": {
+      "name": "Kota Tarakan",
+      "state": 16
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 468,
+    "fields": {
+      "name": "Kabupaten Tasikmalaya",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 469,
+    "fields": {
+      "name": "Kota Tasikmalaya",
+      "state": 9
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 470,
+    "fields": {
+      "name": "Kota Tebing Tinggi",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 471,
+    "fields": {
+      "name": "Kabupaten Tebo",
+      "state": 8
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 472,
+    "fields": {
+      "name": "Kabupaten Tegal",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 473,
+    "fields": {
+      "name": "Kota Tegal",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 474,
+    "fields": {
+      "name": "Kabupaten Teluk Bintuni",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 475,
+    "fields": {
+      "name": "Kabupaten Teluk Wondama",
+      "state": 25
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 476,
+    "fields": {
+      "name": "Kabupaten Temanggung",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 477,
+    "fields": {
+      "name": "Kota Ternate",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 478,
+    "fields": {
+      "name": "Kota Tidore Kepulauan",
+      "state": 20
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 479,
+    "fields": {
+      "name": "Kabupaten Timor Tengah Selatan",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 480,
+    "fields": {
+      "name": "Kabupaten Timor Tengah Utara",
+      "state": 23
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 481,
+    "fields": {
+      "name": "Kabupaten Toba Samosir",
+      "state": 34
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 482,
+    "fields": {
+      "name": "Kabupaten Tojo Una-Una",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 483,
+    "fields": {
+      "name": "Kabupaten Toli-Toli",
+      "state": 29
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 484,
+    "fields": {
+      "name": "Kabupaten Tolikara",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 485,
+    "fields": {
+      "name": "Kota Tomohon",
+      "state": 31
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 486,
+    "fields": {
+      "name": "Kabupaten Toraja Utara",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 487,
+    "fields": {
+      "name": "Kabupaten Trenggalek",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 488,
+    "fields": {
+      "name": "Kota Tual",
+      "state": 19
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 489,
+    "fields": {
+      "name": "Kabupaten Tuban",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 490,
+    "fields": {
+      "name": "Kabupaten Tulang Bawang",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 491,
+    "fields": {
+      "name": "Kabupaten Tulang Bawang Barat",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 492,
+    "fields": {
+      "name": "Kabupaten Tulungagung",
+      "state": 11
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 493,
+    "fields": {
+      "name": "Kabupaten Wajo",
+      "state": 28
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 494,
+    "fields": {
+      "name": "Kabupaten Wakatobi",
+      "state": 30
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 495,
+    "fields": {
+      "name": "Kabupaten Waropen",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 496,
+    "fields": {
+      "name": "Kabupaten Way Kanan",
+      "state": 18
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 497,
+    "fields": {
+      "name": "Kabupaten Wonogiri",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 498,
+    "fields": {
+      "name": "Kabupaten Wonosobo",
+      "state": 10
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 499,
+    "fields": {
+      "name": "Kabupaten Yahukimo",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 500,
+    "fields": {
+      "name": "Kabupaten Yalimo",
+      "state": 24
+    }
+  },
+  {
+    "model": "store.city",
+    "pk": 501,
+    "fields": {
+      "name": "Kota Yogyakarta",
+      "state": 5
+    }
+  }
+]

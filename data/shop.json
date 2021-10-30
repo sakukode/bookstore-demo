@@ -1,0 +1,17 @@
+[
+  {
+    "model": "store.shop",
+    "pk": 1,
+    "fields": {
+      "name": "Hana Bookstore",
+      "owner": "Hana Malika",
+      "email": "hana.malika@gmail.com",
+      "phone": "089935305",
+      "logo": "",
+      "address": "Kedungwuni",
+      "postal_code": "51173",
+      "state": 10,
+      "city": 348
+    }
+  }
+]

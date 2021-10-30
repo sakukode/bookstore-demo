@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-30 12:08+0700\n"
+"POT-Creation-Date: 2021-10-30 14:43+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: store/models.py:6
+#: store/models.py:6 store/models.py:23 store/models.py:35 store/models.py:51
 msgid "name"
 msgstr "nama"
 
-#: store/models.py:10
+#: store/models.py:13
 msgid "category"
 msgstr "kategori"
 
-#: store/models.py:11
+#: store/models.py:14
 msgid "categories"
 msgstr "kategori"
+
+#: store/models.py:48
+msgid "shop"
+msgstr "toko"
+
+#: store/models.py:49
+msgid "shops"
+msgstr "toko"
+
+#: store/models.py:52
+msgid "owner"
+msgstr "pemilik"
+
+#: store/models.py:54
+msgid "phone"
+msgstr "no.telp/hp"
+
+#: store/models.py:55
+msgid "logo"
+msgstr "logo"
+
+#: store/models.py:56
+msgid "address"
+msgstr "alamat"
+
+#: store/models.py:57
+msgid "postal code"
+msgstr "kodepos"
+
+#: store/models.py:59
+msgid "state"
+msgstr "provinsi"
+
+#: store/models.py:60
+msgid "city"
+msgstr "kota"
