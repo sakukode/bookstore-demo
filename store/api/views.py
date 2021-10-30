@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from store.models import Category
 
-from .serializers import ExampleSerializer
+from .serializers import ExampleSerializer, CategoryListSerializer
 
 
 class ExampleListView(ListAPIView):
@@ -22,3 +22,14 @@ class ExampleListView(ListAPIView):
     authentication_classes = [BasicAuthentication]
     permission_classes = [IsAuthenticated]
 
+
+class CategoryListView(ListAPIView):
+    serializer_class = CategoryListSerializer
+    queryset = Category.objects.all()
+    search_fields = ['name']
+    ordering_fields = ['name']
+
+    filter_backends = (
+        SearchFilter,
+        OrderingFilter
+    )
