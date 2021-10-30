@@ -82,13 +82,28 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
 
 
+class CartProductSerializer(serializers.ModelSerializer):
+    price = serializers.SerializerMethodField(read_only=True)
+
+    def get_price(self, obj):
+        formatted_price = rupiah_formatting(obj.price)
+
+        return formatted_price
+
+    class Meta:
+        model = Product
+        fields = ('id', 'name', 'image', 'price', 'weight',)
+
+
 class CartSerializer(serializers.ModelSerializer):
     user = serializers.HiddenField(write_only=True, default=serializers.CurrentUserDefault())
     product_id = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True, write_only=True)
+    product = CartProductSerializer(read_only=True)
 
     class Meta:
         model = Cart
-        fields = ('id', 'quantity', 'user', 'product_id')
+        fields = ('id', 'quantity', 'user', 'product_id', 'product')
+        depth = 1
 
     def create(self, validated_data):
         try:

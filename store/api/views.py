@@ -4,6 +4,7 @@ from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.response import Response
 
 from store.models import Category, Product, Cart
 
@@ -17,6 +18,7 @@ from .serializers import (
 )
 
 from .filters import ProductListFilter
+from store.helpers import convert_rupiah_to_float, rupiah_formatting
 
 
 class ExampleListView(ListAPIView):
@@ -74,3 +76,18 @@ class CartListCreateView(ListCreateAPIView):
     serializer_class = CartSerializer
     queryset = Cart.objects.all()
     permission_classes = (IsAuthenticated,)
+    pagination_class = None # menonaktifkan pagination bawaan dari djangorestframework
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        # mendapatkan total items/products and total amount
+        itemPrices = [(convert_rupiah_to_float(dict(item)['product']['price']) * dict(item)['quantity']) for item in
+                      serializer.data]
+        total_amount = sum(itemPrices)
+        total_item = len(itemPrices)
+
+        response = {"meta": {"amount": rupiah_formatting(total_amount), "item": total_item},
+                    "results": serializer.data}
+
+        return Response(response)
