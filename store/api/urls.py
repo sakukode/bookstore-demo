@@ -9,6 +9,7 @@ from .views import (
     RegisterView,
     CartListCreateView,
     CartUpdateDestroyView,
+    StateListView
 )
 
 urlpatterns = [
@@ -26,4 +27,6 @@ urlpatterns = [
     # API Cart
     path('cart', CartListCreateView.as_view(), name='api-cart-list_create'),
     path('cart/<int:pk>', CartUpdateDestroyView.as_view(), name='api-cart-update_destroy'),
+    # API State
+    path('state', StateListView.as_view(), name='api-state-list'),
 ]

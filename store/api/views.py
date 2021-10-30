@@ -13,7 +13,7 @@ from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
 
-from store.models import Category, Product, Cart
+from store.models import Category, Product, Cart, State
 
 from .serializers import (
     ExampleSerializer,
@@ -21,7 +21,8 @@ from .serializers import (
     ProductListSerializer,
     ProductDetailSerializer,
     RegisterSerializer,
-    CartSerializer
+    CartSerializer,
+    StateListSerializer
 )
 
 from .filters import ProductListFilter
@@ -104,3 +105,15 @@ class CartUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     serializer_class = CartSerializer
     queryset = Cart.objects.all()
     permission_classes = (IsAuthenticated,)
+
+
+class StateListView(ListAPIView):
+    serializer_class = StateListSerializer
+    queryset = State.objects.all()
+    permission_classes = (IsAuthenticated,)
+    search_fields = ['name']
+
+    filter_backends = (
+        SearchFilter,
+    )
+
