@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-30 19:07+0700\n"
+"POT-Creation-Date: 2021-10-30 21:21+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: store/admin.py:56 store/models.py:82
+#: store/admin.py:58 store/models.py:82
 msgid "image"
 msgstr "gambar"
+
+#: store/admin.py:85 store/models.py:136
+msgid "invoice number"
+msgstr "nomor pesanan"
+
+#: store/api/serializers.py:67
+msgid "Password didn't match."
+msgstr ""
 
 #: store/models.py:9 store/models.py:26 store/models.py:38 store/models.py:54
 #: store/models.py:76
@@ -71,7 +79,7 @@ msgstr "provinsi"
 msgid "city"
 msgstr "kota"
 
-#: store/models.py:73 store/models.py:186
+#: store/models.py:73 store/models.py:186 store/models.py:199
 msgid "product"
 msgstr "produk"
 
@@ -135,10 +143,6 @@ msgstr "selesai"
 msgid "canceled"
 msgstr "sudah dibatalkan"
 
-#: store/models.py:136
-msgid "invoice number"
-msgstr "nomor pesanan"
-
 #: store/models.py:139
 msgid "payment method"
 msgstr "metode pembayaran"
@@ -193,26 +197,30 @@ msgstr "kodepos"
 
 #: store/models.py:154
 msgid "Purchased date"
-msgstr ""
+msgstr "tanggal pembayaran"
 
 #: store/models.py:158
 #, fuzzy
 #| msgid "state"
 msgid "status"
-msgstr "provinsi"
+msgstr "status"
 
 #: store/models.py:160
 msgid "sub total"
-msgstr ""
+msgstr "sub total"
 
 #: store/models.py:161
 msgid "shipping rate"
-msgstr ""
+msgstr "biaya pengiriman"
 
 #: store/models.py:162 store/models.py:183
 msgid "total"
-msgstr ""
+msgstr "total"
 
-#: store/models.py:180
+#: store/models.py:180 store/models.py:198
 msgid "quantity"
-msgstr ""
+msgstr "jumlah"
+
+#: store/models.py:196
+msgid "cart"
+msgstr "keranjang"

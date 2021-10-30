@@ -4,7 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from django.utils.translation import gettext
 
-from store.models import Category, Product
+from store.models import Category, Product, Cart
 from store.helpers import rupiah_formatting
 
 
@@ -80,3 +80,27 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.save()
 
         return user
+
+
+class CartSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(write_only=True, default=serializers.CurrentUserDefault())
+    product_id = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True, write_only=True)
+
+    class Meta:
+        model = Cart
+        fields = ('id', 'quantity', 'user', 'product_id')
+
+    def create(self, validated_data):
+        try:
+            cart = Cart.objects.get(product=validated_data['product_id'], user=self.context['request'].user)
+
+            cart.quantity = validated_data['quantity']
+            cart.save()
+        except Cart.DoesNotExist:
+            cart = Cart.objects.create(
+                product=validated_data['product_id'],
+                quantity=validated_data['quantity'],
+                user=validated_data['user']
+            )
+
+        return cart

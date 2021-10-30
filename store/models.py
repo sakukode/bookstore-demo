@@ -187,3 +187,16 @@ class OrderProduct(models.Model):
 
     def __str__(self):
         return ''
+
+
+class Cart(models.Model):
+    class Meta:
+        db_table = 'carts'
+        ordering = ('created_at',)
+        verbose_name = gettext('cart')
+
+    quantity = models.IntegerField(verbose_name=gettext('quantity'))
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, verbose_name=gettext('product'))
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

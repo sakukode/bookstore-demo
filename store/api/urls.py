@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from .views import ExampleListView, CategoryListView, ProductListView, ProductDetailView, RegisterView
+from .views import ExampleListView, CategoryListView, ProductListView, ProductDetailView, RegisterView, CartListCreateView
 
 urlpatterns = [
     # contoh url untuk API endpoint
@@ -15,4 +15,6 @@ urlpatterns = [
     path('register', RegisterView.as_view(), name='api-register'),
     # API Login
     path('login', TokenObtainPairView.as_view(), name='api-login'),
+    # API Cart
+    path('cart', CartListCreateView.as_view(), name='api-cart-list_create'),
 ]
