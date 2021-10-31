@@ -1,4 +1,6 @@
 from django.contrib.auth.models import User
+from django.db.models import Sum, F
+from django.utils.translation import gettext
 from rest_framework.generics import (
     ListAPIView,
     RetrieveAPIView,
@@ -23,11 +25,13 @@ from .serializers import (
     RegisterSerializer,
     CartSerializer,
     StateListSerializer,
-    CityListSerializer
+    CityListSerializer,
+    ShippingCostFormSerializer,
+    ShippingCostListSerializer
 )
 
 from .filters import ProductListFilter
-from store.helpers import convert_rupiah_to_float, rupiah_formatting
+from store.helpers import convert_rupiah_to_float, rupiah_formatting, get_shipping_cost
 
 
 class ExampleListView(ListAPIView):
@@ -130,3 +134,30 @@ class CityListView(ListAPIView):
         SearchFilter,
         DjangoFilterBackend
     )
+
+
+class ShippingCostView(CreateAPIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request, *args, **kwargs):
+        data = request.data
+        serializerForm = ShippingCostFormSerializer(data=data)
+
+        if serializerForm.is_valid():
+            serializerFormData = serializerForm.data
+            origin = serializerFormData['origin']
+            destination = serializerFormData['destination']
+            courier = serializerFormData['courier']
+            # kalkulasi total berat dari semua produk yang ada pada cart
+            weight = Cart.objects.filter(user=request.user.id).aggregate(total=Sum(F('product__weight') * F('quantity')))[
+                'total']
+
+            if weight is None:
+                return Response(data={'message': gettext('Your cart is empty.')}, status=422)
+
+            costs = get_shipping_cost(courier=courier, origin=origin, destination=destination, weight=weight)
+            result = ShippingCostListSerializer(costs, many=True)
+
+            return Response({"results": result.data})
+        else:
+            return Response(data={'message': gettext('Failed get shipping cost.')}, status=422)

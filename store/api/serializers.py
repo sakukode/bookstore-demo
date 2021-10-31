@@ -4,7 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from django.utils.translation import gettext
 
-from store.models import Category, Product, Cart, State, City
+from store.models import Category, Product, Cart, State, City, Shop, Order
 from store.helpers import rupiah_formatting
 
 
@@ -162,3 +162,20 @@ class CityListSerializer(serializers.ModelSerializer):
     class Meta:
         model = City
         fields = ('id', 'name',)
+
+
+class ShippingCostFormSerializer(serializers.Serializer):
+    origin = serializers.SerializerMethodField(read_only=True)
+    destination = serializers.IntegerField(required=True)
+    courier = serializers.ChoiceField(required=True, choices=Order.SHIPPING_COURIER_CHOICES)
+
+    def get_origin(self, obj):
+        shop = Shop.objects.first()
+
+        return shop.city.id
+
+
+class ShippingCostListSerializer(serializers.Serializer):
+    service = serializers.CharField()
+    description = serializers.CharField()
+    cost = serializers.DictField()

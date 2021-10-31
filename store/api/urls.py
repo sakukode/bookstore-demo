@@ -10,7 +10,8 @@ from .views import (
     CartListCreateView,
     CartUpdateDestroyView,
     StateListView,
-    CityListView
+    CityListView,
+    ShippingCostView
 )
 
 urlpatterns = [
@@ -32,4 +33,6 @@ urlpatterns = [
     path('state', StateListView.as_view(), name='api-state-list'),
     # API City
     path('city', CityListView.as_view(), name='api-city-list'),
+    # API Shipping Cost
+    path('shipping-cost', ShippingCostView.as_view(), name='api-shipping-cost'),
 ]
