@@ -4,6 +4,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from django.utils.translation import gettext
 from django.db import transaction
+from drf_extra_fields.fields import Base64ImageField
 
 from store.models import Category, Product, Cart, State, City, Shop, Order, OrderProduct, new_order_signal
 from store.helpers import rupiah_formatting, generate_invoice_number, generate_payment_token
@@ -341,3 +342,11 @@ class OrderDetailSerializer(serializers.ModelSerializer):
         result = rupiah_formatting(obj.total_shipping)
 
         return result
+
+
+class OrderProofPaymentFormSerializer(serializers.ModelSerializer):
+    payment_proof = Base64ImageField()
+
+    class Meta:
+        model = Order
+        fields = ('id', 'payment_proof',)

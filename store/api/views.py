@@ -30,7 +30,8 @@ from .serializers import (
     ShippingCostListSerializer,
     OrderFormSerializer,
     OrderListSerializer,
-    OrderDetailSerializer
+    OrderDetailSerializer,
+    OrderProofPaymentFormSerializer
 )
 
 from .filters import ProductListFilter
@@ -182,5 +183,11 @@ class OrderView(ListCreateAPIView):
 
 class OrderDetailView(RetrieveAPIView):
     serializer_class = OrderDetailSerializer
+    queryset = Order.objects.all()
+    permission_classes = (IsAuthenticated,)
+
+
+class OrderProofPaymentView(UpdateAPIView):
+    serializer_class = OrderProofPaymentFormSerializer
     queryset = Order.objects.all()
     permission_classes = (IsAuthenticated,)

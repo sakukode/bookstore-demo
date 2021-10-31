@@ -13,7 +13,8 @@ from .views import (
     CityListView,
     ShippingCostView,
     OrderView,
-    OrderDetailView
+    OrderDetailView,
+    OrderProofPaymentView
 )
 
 urlpatterns = [
@@ -40,4 +41,6 @@ urlpatterns = [
     # API Order
     path('order', OrderView.as_view(), name='api-order-list-create'),
     path('order/<int:pk>', OrderDetailView.as_view(), name='api-order-detail'),
+    path('order/proof-payment/<int:pk>', OrderProofPaymentView.as_view(), name='api-order-proof-payment'),
 ]
+
