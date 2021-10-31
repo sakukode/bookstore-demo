@@ -12,7 +12,8 @@ from .views import (
     StateListView,
     CityListView,
     ShippingCostView,
-    OrderView
+    OrderView,
+    OrderDetailView
 )
 
 urlpatterns = [
@@ -38,4 +39,5 @@ urlpatterns = [
     path('shipping-cost', ShippingCostView.as_view(), name='api-shipping-cost'),
     # API Order
     path('order', OrderView.as_view(), name='api-order-list-create'),
+    path('order/<int:pk>', OrderDetailView.as_view(), name='api-order-detail'),
 ]

@@ -29,7 +29,8 @@ from .serializers import (
     ShippingCostFormSerializer,
     ShippingCostListSerializer,
     OrderFormSerializer,
-    OrderListSerializer
+    OrderListSerializer,
+    OrderDetailSerializer
 )
 
 from .filters import ProductListFilter
@@ -177,3 +178,9 @@ class OrderView(ListCreateAPIView):
 
     def get_queryset(self):
         return Order.objects.all().filter(user=self.request.user)
+
+
+class OrderDetailView(RetrieveAPIView):
+    serializer_class = OrderDetailSerializer
+    queryset = Order.objects.all()
+    permission_classes = (IsAuthenticated,)

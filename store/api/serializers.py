@@ -282,3 +282,62 @@ class OrderListSerializer(serializers.ModelSerializer):
         total_weight = str(int(total_weight)) + " gram"
 
         return total_weight
+
+
+class OrderProductSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(source='product.name')
+    image = serializers.ImageField(source='product.image')
+    weight = serializers.SerializerMethodField()
+    price = serializers.SerializerMethodField()
+    total = serializers.SerializerMethodField()
+
+    class Meta:
+        model = OrderProduct
+        fields = ('name', 'image', 'weight', 'quantity', 'price', 'total',)
+
+    def get_weight(self, obj):
+        return str(int(obj.weight * 1000)) + " gram"
+
+    def get_price(self, obj):
+        return rupiah_formatting(obj.price)
+
+    def get_total(self, obj):
+        return rupiah_formatting(obj.total)
+
+
+class OrderDetailSerializer(serializers.ModelSerializer):
+    total_shipping = serializers.SerializerMethodField(read_only=True)
+    sub_total = serializers.SerializerMethodField(read_only=True)
+    total = serializers.SerializerMethodField(read_only=True)
+    payment_method = serializers.CharField(source='get_payment_method_display', read_only=True)
+    shipping_courier = serializers.CharField(source='get_shipping_courier_display', read_only=True)
+    status = serializers.CharField(source='get_status_display', read_only=True)
+    products = OrderProductSerializer(many=True, source='orderproduct_set')
+    customer_city = serializers.CharField(source='customer_city.name')
+    customer_state = serializers.CharField(source='customer_state.name')
+    payment_proof = serializers.ImageField()
+
+    class Meta:
+        model = Order
+        fields = (
+            'id', 'invoice_number', 'payment_method', 'shipping_courier', 'shipping_service',
+            'shipping_tracking_number', 'purchased_at', 'created_at', 'status', 'payment_proof', 'payment_token',
+            'customer_name', 'customer_phone', 'customer_address', 'customer_city', 'customer_state',
+            'customer_postal_code',
+            'sub_total', 'total_shipping', 'total', 'products',)
+        depth = 1
+
+    def get_total(self, obj):
+        result = rupiah_formatting(obj.total)
+
+        return result
+
+    def get_sub_total(self, obj):
+        result = rupiah_formatting(obj.sub_total)
+
+        return result
+
+    def get_total_shipping(self, obj):
+        result = rupiah_formatting(obj.total_shipping)
+
+        return result
