@@ -27,7 +27,7 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .django_env file
-environ.Env.read_env(env.str('ENV_PATH'), os.path.join(BASE_DIR, '.django_env'))
+environ.Env.read_env(os.path.join(BASE_DIR, '.django_env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-y&ng_kkhh#^&8d7qaxbb#m%ippsqb%msi3&(pogr_o^wc&z2h$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 # Application definition
@@ -190,4 +190,4 @@ MIDTRANS_CLIENT_KEY = env.str('MIDTRANS_CLIENT_KEY')
 MIDTRANS_IS_PRODUCTION = env.bool('MIDTRANS_IS_PRODUCTION')
 
 CORS_ALLOW_ALL_ORIGINS = env.bool('CORS_ALLOW_ALL_ORIGINS')
-CORS_ALLOWED_ORIGINS = []
+CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS')
