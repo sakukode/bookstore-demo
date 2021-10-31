@@ -27,7 +27,7 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .django_env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.django_env'))
+environ.Env.read_env(env.str('ENV_PATH', os.path.join(BASE_DIR, '.django_env')))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
