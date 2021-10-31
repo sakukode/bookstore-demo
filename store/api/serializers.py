@@ -251,3 +251,34 @@ class OrderFormSerializer(serializers.ModelSerializer):
                 transaction.on_commit(lambda: new_order_signal.send(sender=None, order=order))
 
                 return order
+
+
+class OrderListSerializer(serializers.ModelSerializer):
+    total = serializers.SerializerMethodField(read_only=True)
+    payment_method = serializers.CharField(source='get_payment_method_display', read_only=True)
+    shipping_courier = serializers.CharField(source='get_shipping_courier_display', read_only=True)
+    status = serializers.CharField(source='get_status_display', read_only=True)
+    # custom fields
+    image = serializers.ImageField(source='orderproduct_set.first.product.image')
+    total_item = serializers.IntegerField(source='orderproduct_set.count', read_only=True)
+    total_weight = serializers.SerializerMethodField(read_only=True)
+
+    class Meta:
+        model = Order
+        fields = (
+            'id', 'invoice_number', 'payment_method', 'shipping_courier', 'shipping_service',
+            'shipping_tracking_number', 'purchased_at', 'created_at', 'status', 'image', 'total', 'total_item',
+            'total_weight',)
+        depth = 1
+
+    def get_total(self, obj):
+        result = rupiah_formatting(obj.total)
+
+        return result
+
+    def get_total_weight(self, obj):
+        itemWeights = [item.product.weight for item in obj.orderproduct_set.all()]
+        total_weight = sum(itemWeights) * 1000
+        total_weight = str(int(total_weight)) + " gram"
+
+        return total_weight

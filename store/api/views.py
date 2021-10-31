@@ -7,7 +7,7 @@ from rest_framework.generics import (
     CreateAPIView,
     ListCreateAPIView,
     UpdateAPIView,
-    RetrieveUpdateDestroyAPIView
+    RetrieveUpdateDestroyAPIView,
 )
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.authentication import BasicAuthentication
@@ -28,7 +28,8 @@ from .serializers import (
     CityListSerializer,
     ShippingCostFormSerializer,
     ShippingCostListSerializer,
-    OrderFormSerializer
+    OrderFormSerializer,
+    OrderListSerializer
 )
 
 from .filters import ProductListFilter
@@ -164,7 +165,15 @@ class ShippingCostView(CreateAPIView):
             return Response(data={'message': gettext('Failed get shipping cost.')}, status=422)
 
 
-class OrderView(CreateAPIView):
-    serializer_class = OrderFormSerializer
+class OrderView(ListCreateAPIView):
+    serializer_class = OrderListSerializer
     queryset = Order.objects.all()
     permission_classes = (IsAuthenticated,)
+
+    def get_serializer_class(self):
+        if self.request.method == 'POST':
+            return OrderFormSerializer
+        return OrderListSerializer
+
+    def get_queryset(self):
+        return Order.objects.all().filter(user=self.request.user)

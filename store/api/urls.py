@@ -37,5 +37,5 @@ urlpatterns = [
     # API Shipping Cost
     path('shipping-cost', ShippingCostView.as_view(), name='api-shipping-cost'),
     # API Order
-    path('order', OrderView.as_view(), name='api-order-create'),
+    path('order', OrderView.as_view(), name='api-order-list-create'),
 ]
