@@ -17,6 +17,7 @@ from datetime import timedelta
 import environ
 
 env = environ.Env(
+    DEBUG=(bool, True),
     MIDTRANS_IS_PRODUCTION=(bool, False),
     EMAIL_USE_TLS=(bool, True),
     CORS_ALLOW_ALL_ORIGINS=(bool, False),
@@ -26,7 +27,7 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .django_env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.django_env'))
+environ.Env.read_env(env.str('ENV_PATH'), os.path.join(BASE_DIR, '.django_env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -35,9 +36,9 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.django_env'))
 SECRET_KEY = 'django-insecure-y&ng_kkhh#^&8d7qaxbb#m%ippsqb%msi3&(pogr_o^wc&z2h$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
