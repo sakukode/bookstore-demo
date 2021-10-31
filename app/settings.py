@@ -14,9 +14,19 @@ import os
 from pathlib import Path
 from datetime import timedelta
 
+import environ
+
+env = environ.Env(
+    MIDTRANS_IS_PRODUCTION=(bool, False),
+    EMAIL_USE_TLS=(bool, True),
+    CORS_ALLOW_ALL_ORIGINS=(bool, False),
+)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Take environment variables from .django_env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.django_env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -87,12 +97,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bookstore', # database name
-        'USER': 'devuser',
-        'PASSWORD': 'Belajardjango4739@',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'ENGINE': env.str('DB_DRIVER'),
+        'NAME': env.str('DB_DATABASE'), # database name
+        'USER': env.str('DB_USER'),
+        'PASSWORD': env.str('DB_PASSWORD'),
+        'HOST': env.str('DB_HOST'),
+        'PORT': env.str('DB_PORT'),
     }
 }
 
@@ -160,24 +170,23 @@ SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': True,
 }
 
-# Setting API RajaOngkir
-RAJAONGKIR_API_URL = 'api.rajaongkir.com'
-RAJAONGKIR_API_KEY = '<api_key>'
-RAJAONGKIR_ACCOUNT_PLAN = 'starter'
-
-MIDTRANS_API_URL = 'app.sandbox.midtrans.com/snap/v1'
-MIDTRANS_SERVER_KEY = '<midtrans_server_key>'
-MIDTRANS_CLIENT_KEY = '<midtrans_client_key>'
-MIDTRANS_IS_PRODUCTION = False
+RAJAONGKIR_API_URL = env.str('RAJAONGKIR_API_URL')
+RAJAONGKIR_API_KEY = env.str('RAJAONGKIR_API_KEY')
+RAJAONGKIR_ACCOUNT_PLAN = env.str('RAJAONGKIR_ACCOUNT_PLAN')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = '<sendinblue_smtp_server>'
-EMAIL_HOST_USER = '<sendinblue_login>'
-EMAIL_HOST_PASSWORD = '<sendinblue_smtp_key_value>'
-EMAIL_PORT = '<sendinblue_port>'
+EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS')
+EMAIL_HOST = env.str('EMAIL_HOST')
+EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = env.int('EMAIL_PORT')
 
-ADMIN_EMAIL = '<your_email>'
+ADMIN_EMAIL = env.str('ADMIN_EMAIL')
 
-CORS_ALLOW_ALL_ORIGINS = True
+MIDTRANS_API_URL = env.str('MIDTRANS_API_URL')
+MIDTRANS_SERVER_KEY = env.str('MIDTRANS_SERVER_KEY')
+MIDTRANS_CLIENT_KEY = env.str('MIDTRANS_CLIENT_KEY')
+MIDTRANS_IS_PRODUCTION = env.bool('MIDTRANS_IS_PRODUCTION')
+
+CORS_ALLOW_ALL_ORIGINS = env.bool('CORS_ALLOW_ALL_ORIGINS')
 CORS_ALLOWED_ORIGINS = []
