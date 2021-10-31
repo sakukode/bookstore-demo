@@ -15,7 +15,7 @@ from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
 
-from store.models import Category, Product, Cart, State, City
+from store.models import Category, Product, Cart, State, City, Order
 
 from .serializers import (
     ExampleSerializer,
@@ -27,7 +27,8 @@ from .serializers import (
     StateListSerializer,
     CityListSerializer,
     ShippingCostFormSerializer,
-    ShippingCostListSerializer
+    ShippingCostListSerializer,
+    OrderFormSerializer
 )
 
 from .filters import ProductListFilter
@@ -161,3 +162,9 @@ class ShippingCostView(CreateAPIView):
             return Response({"results": result.data})
         else:
             return Response(data={'message': gettext('Failed get shipping cost.')}, status=422)
+
+
+class OrderView(CreateAPIView):
+    serializer_class = OrderFormSerializer
+    queryset = Order.objects.all()
+    permission_classes = (IsAuthenticated,)

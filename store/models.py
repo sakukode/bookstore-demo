@@ -1,8 +1,11 @@
 from django.db import models
 from django.utils.translation import gettext
 from django.utils.text import slugify
-
 from django.contrib.auth.models import User
+from django.conf import settings
+from django.core.mail import EmailMessage
+from django.dispatch import receiver, Signal
+from django.template.loader import get_template
 
 
 class Category(models.Model):
@@ -200,3 +203,28 @@ class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+
+# Custom signal ketika ada order baru
+new_order_signal = Signal(providing_args=['order'])
+
+
+@receiver(new_order_signal)
+def send_order_invoice(sender, **kwargs):
+    if kwargs['order']:
+        order = kwargs['order']
+        template = get_template("store/email/new_order_invoice.html")
+        context = {'order': order}
+        body = template.render(context)
+        to = order.user.email
+        subject = 'Order Invoice #' + order.invoice_number
+
+        mail = EmailMessage(
+            subject=subject,
+            from_email=settings.ADMIN_EMAIL,
+            to=[to],
+            body=body,
+            reply_to=[settings.ADMIN_EMAIL]
+        )
+        mail.content_subtype = "html"
+        mail.send()

@@ -3,9 +3,10 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.models import User
 from django.utils.translation import gettext
+from django.db import transaction
 
-from store.models import Category, Product, Cart, State, City, Shop, Order
-from store.helpers import rupiah_formatting
+from store.models import Category, Product, Cart, State, City, Shop, Order, OrderProduct, new_order_signal
+from store.helpers import rupiah_formatting, generate_invoice_number, generate_payment_token
 
 
 class ExampleSerializer(serializers.ModelSerializer):
@@ -179,3 +180,74 @@ class ShippingCostListSerializer(serializers.Serializer):
     service = serializers.CharField()
     description = serializers.CharField()
     cost = serializers.DictField()
+
+
+class OrderFormSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(write_only=True, default=serializers.CurrentUserDefault())
+
+    class Meta:
+        model = Order
+        fields = (
+            'id', 'invoice_number', 'payment_method', 'shipping_courier', 'shipping_service',
+            'customer_name', 'customer_phone', 'customer_address', 'customer_city', 'customer_state',
+            'customer_postal_code', 'sub_total', 'total_shipping', 'total', 'user',)
+        read_only_fields = ('id', 'invoice_number',)
+        extra_kwargs = {
+            'payment_method': {'write_only': True},
+            'shipping_courier': {'write_only': True},
+            'shipping_service': {'write_only': True},
+            'customer_name': {'write_only': True},
+            'customer_phone': {'write_only': True},
+            'customer_address': {'write_only': True},
+            'customer_city': {'write_only': True},
+            'customer_state': {'write_only': True},
+            'customer_postal_code': {'write_only': True},
+            'total_shipping': {'write_only': True},
+            'sub_total': {'write_only': True, 'required': False},
+            'total': {'write_only': True, 'required': False},
+        }
+
+    def create(self, validated_data):
+        carts = Cart.objects.filter(user=self.context['request'].user)
+
+        if not carts.exists():
+            raise serializers.ValidationError("Your cart is empty.")
+
+        sub_total = sum([(cart.quantity * cart.product.price) for cart in carts])
+        total = sub_total + validated_data['total_shipping']
+        validated_data['sub_total'] = sub_total
+        validated_data['total'] = total
+
+        with transaction.atomic():
+            order = Order.objects.create(**validated_data)
+
+            if order:
+                # simpan data detail order di table order_products
+                for cart in carts:
+                    order.orderproduct_set.create(
+                        quantity=cart.quantity,
+                        weight=cart.product.weight,
+                        price=cart.product.price,
+                        total=(float(cart.quantity) * cart.product.price),
+                        product=cart.product
+                    )
+                    cart.product.stock = cart.product.stock - cart.quantity
+                    cart.product.save()
+
+                # menggenerate invoice number
+                order.invoice_number = generate_invoice_number(order)
+
+                # jika metode pembayarannya adala "online payment",
+                # maka itu akan menggenerate token pembayaran dari payment gatewat Midtrans
+                if order.payment_method == Order.ONLINE_PAYMENT:
+                    order.payment_token = generate_payment_token(order)
+
+                order.save()
+
+                # hapus data cart berdasarkan user yang melakukan request
+                Cart.objects.filter(user=self.context['request'].user).delete()
+
+                # mengirim email tagihan pesanan
+                transaction.on_commit(lambda: new_order_signal.send(sender=None, order=order))
+
+                return order

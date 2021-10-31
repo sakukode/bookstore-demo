@@ -162,3 +162,18 @@ SIMPLE_JWT = {
 RAJAONGKIR_API_URL = 'api.rajaongkir.com'
 RAJAONGKIR_API_KEY = '<api_key>'
 RAJAONGKIR_ACCOUNT_PLAN = 'starter'
+
+MIDTRANS_API_URL = 'app.sandbox.midtrans.com/snap/v1'
+MIDTRANS_SERVER_KEY = '<midtrans_server_key>'
+MIDTRANS_CLIENT_KEY = '<midtrans_client_key>'
+MIDTRANS_IS_PRODUCTION = False
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = '<sendinblue_smtp_server>'
+EMAIL_HOST_USER = '<sendinblue_login>'
+EMAIL_HOST_PASSWORD = '<sendinblue_smtp_key_value>'
+EMAIL_PORT = '<sendinblue_port>'
+
+ADMIN_EMAIL = '<your_email>'
+
