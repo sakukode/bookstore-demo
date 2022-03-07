@@ -111,7 +111,7 @@ class CartSerializer(serializers.ModelSerializer):
         try:
             cart = Cart.objects.get(product=validated_data['product_id'], user=self.context['request'].user)
 
-            cart.quantity = validated_data['quantity']
+            cart.quantity = cart.quantity + validated_data['quantity']
             cart.save()
         except Cart.DoesNotExist:
             cart = Cart.objects.create(

@@ -69,7 +69,7 @@ class ProductListView(ListAPIView):
     serializer_class = ProductListSerializer
     queryset = Product.objects.all()
     ordering_fields = ['price', 'created_at']
-    search_fields = ['name', 'author']
+    search_fields = ['name']
     filterset_class = ProductListFilter
 
     filter_backends = (
@@ -97,17 +97,26 @@ class CartListCreateView(ListCreateAPIView):
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
-        serializer = self.get_serializer(queryset, many=True)
-        # mendapatkan total items/products and total amount
-        itemPrices = [(convert_rupiah_to_float(dict(item)['product']['price']) * dict(item)['quantity']) for item in
-                      serializer.data]
-        total_amount = sum(itemPrices)
-        total_item = len(itemPrices)
 
-        response = {"meta": {"amount": rupiah_formatting(total_amount), "item": total_item},
-                    "results": serializer.data}
+        if queryset.exists():
+            serializer = self.get_serializer(queryset, many=True)
+            
+            # mendapatkan total items/products and total amount
+            itemPrices = [(convert_rupiah_to_float(dict(item)['product']['price']) * dict(item)['quantity']) for item in
+                        serializer.data]
+            total_amount = sum(itemPrices)
+            total_item = len(itemPrices)
+
+            response = {"meta": {"amount": rupiah_formatting(total_amount), "item": total_item},
+                        "results": serializer.data}
+        else:
+            response = {"meta": {"amount": rupiah_formatting(0), "item": 0},
+                        "results": []}
 
         return Response(response)
+
+    def get_queryset(self):
+        return Cart.objects.all().filter(user=self.request.user)
 
 
 class CartUpdateDestroyView(RetrieveUpdateDestroyAPIView):
