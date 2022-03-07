@@ -100,7 +100,7 @@ class Product(models.Model):
 class Order(models.Model):
     class Meta:
         db_table = 'orders'
-        ordering = ('created_at',)
+        ordering = ['created_at']
         verbose_name = gettext('order')
         verbose_name_plural = gettext('orders')
 
